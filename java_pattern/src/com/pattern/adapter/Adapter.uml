@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_43-jgAjVEem8G_j-gQFIbA">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_4-zkQAjVEem8G_j-gQFIbA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_46ZlYAjVEem8G_j-gQFIbA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_46cBoAjVEem8G_j-gQFIbA" name="pattern">
+      <packagedElement xmi:type="uml:Package" xmi:id="_46fE8AjVEem8G_j-gQFIbA" name="adapter">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_46g6IAjVEem8G_j-gQFIbA" name="Target">
+          <ownedOperation xmi:id="_48FAYAjVEem8G_j-gQFIbA" name="Request" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_46iIQAjVEem8G_j-gQFIbA" name="Adaptee">
+          <ownedOperation xmi:id="_48G1kAjVEem8G_j-gQFIbA" name="SpecificRequest" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_46ivUAjVEem8G_j-gQFIbA" name="AdapterObject" clientDependency="_48HcoAjVEem8G_j-gQFIbA">
+          <ownedAttribute xmi:id="_48Kf8AjVEem8G_j-gQFIbA" name="objectAdaptee" visibility="private" type="_46iIQAjVEem8G_j-gQFIbA" association="_5DuggAjVEem8G_j-gQFIbA">
+            <ownedComment xmi:id="_48M8MAjVEem8G_j-gQFIbA">
+              <body>/** 
+ * 对象适配器，通过对象组合的方式
+ */
+</body>
+            </ownedComment>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_48HcoAjVEem8G_j-gQFIbA" name="Target" supplier="_46g6IAjVEem8G_j-gQFIbA" client="_46ivUAjVEem8G_j-gQFIbA" contract="_46g6IAjVEem8G_j-gQFIbA"/>
+          <ownedOperation xmi:id="_48M8MQjVEem8G_j-gQFIbA" name="Request" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_46j9cAjVEem8G_j-gQFIbA" name="Client">
+          <ownedOperation xmi:id="_48OxYAjVEem8G_j-gQFIbA" name="DoRequest" visibility="public">
+            <ownedParameter xmi:id="_48OxYQjVEem8G_j-gQFIbA" name="ObTarget" type="_46g6IAjVEem8G_j-gQFIbA"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_4-1ZcAjVEem8G_j-gQFIbA" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_4-1ZcQjVEem8G_j-gQFIbA" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4-1ZcgjVEem8G_j-gQFIbA" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4-1ZcwjVEem8G_j-gQFIbA"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_46lyoAjVEem8G_j-gQFIbA" name="AdapterClass" clientDependency="_4-3OoAjVEem8G_j-gQFIbA">
+          <generalization xmi:id="_4-3OoQjVEem8G_j-gQFIbA" general="_46iIQAjVEem8G_j-gQFIbA"/>
+          <interfaceRealization xmi:id="_4-3OoAjVEem8G_j-gQFIbA" name="Target" supplier="_46g6IAjVEem8G_j-gQFIbA" client="_46lyoAjVEem8G_j-gQFIbA" contract="_46g6IAjVEem8G_j-gQFIbA"/>
+          <ownedOperation xmi:id="_4-31sAjVEem8G_j-gQFIbA" name="Request" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_5DuggAjVEem8G_j-gQFIbA" memberEnd="_48Kf8AjVEem8G_j-gQFIbA _5DuggQjVEem8G_j-gQFIbA">
+          <ownedEnd xmi:id="_5DuggQjVEem8G_j-gQFIbA" name="AdapterObject" type="_46ivUAjVEem8G_j-gQFIbA" association="_5DuggAjVEem8G_j-gQFIbA"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

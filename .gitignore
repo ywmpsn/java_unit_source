@@ -24,3 +24,4 @@ java_pattern/.project
 java_pattern/.classpath
 java_pattern/.reverse.properties
 java_pattern/.settings/org.eclipse.jdt.core.prefs
+java_pattern/log.txt

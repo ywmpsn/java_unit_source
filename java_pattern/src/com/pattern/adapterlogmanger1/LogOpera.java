@@ -1,4 +1,4 @@
-package com.pattern.adapterlogmanger;
+package com.pattern.adapterlogmanger1;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

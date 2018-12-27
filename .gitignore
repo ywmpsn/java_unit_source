@@ -25,3 +25,6 @@ java_pattern/.classpath
 java_pattern/.reverse.properties
 java_pattern/.settings/org.eclipse.jdt.core.prefs
 java_pattern/log.txt
+java_pattern/bin/com/pattern/adapterlogmanger2/adapterlogmanager2.uml
+java_pattern/src/com/pattern/adapterlogmanger2/adapterlogmanager2.uml
+java_pattern/src/com/pattern/adapterlogmanger2/adapterlogmanager2.umldi
